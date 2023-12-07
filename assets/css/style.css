@@ -191,3 +191,64 @@ body {
         width: calc(100% - 20px); 
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+    /* background-color: green; */
+}
+
+header {
+    display: flex;
+    height: 100px;
+    overflow: hidden;
+}
+
+.header_logo {
+    display: flex;
+
+    & a {
+        display: flex;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        margin-left: 1.5rem;
+    }
+
+    & img {
+        height: 80%;
+        margin-right: 1.5rem;
+    }
+
+    & h1 {
+        font-family: "Kalam", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: -1.5px;
+    }
+
+    /* background-color: green; */
+}
+
+.header_nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    /* background-color: blue;  */
+    
+    & nav > a {
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        margin-left: 2rem;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+    }
+
+    & nav > a.selected {
+        border-bottom: 2px solid black;
+    }
+}
