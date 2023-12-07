@@ -124,6 +124,15 @@ body {
 	padding: 2.5rem;
 	margin: 2rem;
 	font-size: 1.125rem;
+    transition: transform 0.25s ease;
+}
+.widget:hover {
+    transform: translate(-5px, -5px); /* Déplacer la div vers la droite et vers le bas */
+}
+
+.clickOnWidget {
+    text-decoration: none;
+    color: black;
 }
 
 .widget > * + * {
@@ -134,6 +143,10 @@ body {
 	font-size: 1.5rem;
 	font-weight: 700;
 	line-height: 1.25;
+}
+
+.widget .lienVersArticle {
+    color: green;
 }
 
 .widget code {

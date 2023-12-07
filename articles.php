@@ -28,16 +28,16 @@ $PAGENAME = "Articles";
                 <?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
             </div>
             <div class="article">
-                <?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
+                <?php include ROOT_DIR.'widgets/GIEC.php';?>
             </div>
             <div class="article">
-                <?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
+                <?php include ROOT_DIR.'widgets/HCC.php';?>
             </div>
             <div class="article">
-                <?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
+                <?php include ROOT_DIR.'widgets/rechauffement.php';?>
             </div>
             <div class="article">
-                <?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
+                <?php include ROOT_DIR.'widgets/temp.php';?>
             </div>
         </section>
     </main>
