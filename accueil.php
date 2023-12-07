@@ -33,6 +33,9 @@ define('ROOT_DIR', '');
 	<div class="main-content responsive-wrapper">
 		<?php include ROOT_DIR.'widgets/la_terre_cest_quoi.php';?>
 		<?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
-		
+		<?php include ROOT_DIR.'widgets/GIEC.php';?>
+		<?php include ROOT_DIR.'widgets/HCC.php';?>
+		<?php include ROOT_DIR.'widgets/rechauffement.php';?>
+		<?php include ROOT_DIR.'widgets/temp.php';?>
 	</div>
 </main>
