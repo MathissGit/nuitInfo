@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.sectionArticle {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectionArticle > article {
+    width: 80%;
+    height: 80%;
+    padding: 1em;
+    
+}
+.sectionArticle > article > h2 .left {
+    display: flex;
+    align-items: left;
+}
+.sectionArticle > article > h2 .right {
+    display: flex;
+    align-items: right;
+}
+
