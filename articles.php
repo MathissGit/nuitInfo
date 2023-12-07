@@ -1,5 +1,6 @@
 <?php
 session_start();
+define('ROOT_DIR', '');
 
 $PAGENAME = "Articles";
 
@@ -13,49 +14,35 @@ $PAGENAME = "Articles";
     <title><?php if (isset($PAGENAME)) {echo "$PAGENAME";}?></title>
 </head>
 <body>
-    
-    <section class="sectionArticle">
+
+    <main>
 
         <h1 class="h1_article" >Mieux comprendre les acteurs du climat</h1>
+        <img src="assets/img/climate-change.jpg" alt="">
 
-        <article class="article1 right">
-            <div class="textArticle">
-                <h2>Notre Terre :</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas impedit ex, nulla dolorum molestias totam provident veritatis non consequatur eum nesciunt laudantium omnis quia eius nemo voluptatum tenetur? Placeat, cum.</p>
-                <a href="#">En savoir plus</a>
+        <section class="sectionArticle">
+            <div class="article">
+                <?php include ROOT_DIR.'widgets/la_terre_cest_quoi.php';?>
             </div>
-            <div class="imageArticle"><img src="" alt="planete terre"></div>
-
-        </article>
-        
-        <article class="article2 left">
-            <div class="imageArticle"><img src="assets/img/climate-change.jpg" alt="image effet de serre"></div>
-            <div class="textArticle">
-                <h2>Le Climat ?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas impedit ex, nulla dolorum molestias totam provident veritatis non consequatur eum nesciunt laudantium omnis quia eius nemo voluptatum tenetur? Placeat, cum.</p>
-                <a href="#">En savoir plus</a>
+            <div class="article">
+                <?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
             </div>
-        </article>
-
-        <article class="article3 right">
-            <div class="textArticle">
-                <h2>C'est quoi l'effet de serre ?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas impedit ex, nulla dolorum molestias totam provident veritatis non consequatur eum nesciunt laudantium omnis quia eius nemo voluptatum tenetur? Placeat, cum.</p>
-                <a href="#">En savoir plus</a>
+            <div class="article">
+                <?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
             </div>
-            <div class="imageArticle"><img src="assets/img/effet-serre.jpg" alt="image effet de serre"></div>
-        </article>
-
-        <article class="article4 left">
-            <div class="imageArticle"><img src="assets/img/affiche-GIEC.jpeg" alt="image publicité du GIEC"></div>
-            <div class="textArticle">
-                <h2>Et le GIEC dans tout ça ?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas impedit ex, nulla dolorum molestias totam provident veritatis non consequatur eum nesciunt laudantium omnis quia eius nemo voluptatum tenetur? Placeat, cum.</p>
-                <a href="#">En savoir plus</a>
+            <div class="article">
+                <?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
             </div>
-        </article>
+            <div class="article">
+                <?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
+            </div>
+            <div class="article">
+                <?php include ROOT_DIR.'widgets/le_climat_cest_quoi.php';?>
+            </div>
+        </section>
+    </main>
+    
 
-    </section>
 
 
 
