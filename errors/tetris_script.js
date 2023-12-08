@@ -5,7 +5,7 @@
       boardDiv: null,
       canvas: null,
       pSize: 40,
-      canvasHeight: 880,
+      canvasHeight: 780,
       canvasWidth: 400,
       boardHeight: 0,
       boardWidth: 0,
