@@ -17,9 +17,12 @@
         <div class="header_nav">
             <nav>
                 <a class="<?php if (isset($PAGENAME) && $PAGENAME == 'Accueil') {echo 'selected';}?>" href="">Accueil</a>
-                <a href="">Articles</a>
-                <a href="">Jeu</a>
+                <a class="<?php if (isset($PAGENAME) && $PAGENAME == 'Articles') {echo 'selected';}?>" href="articles.php">Articles</a>
+                <a class="<?php if (isset($PAGENAME) && $PAGENAME == 'Jeu') {echo 'selected';}?>" href="errors/tetris.php">Jeu</a>
                 <a class="<?php if (isset($PAGENAME) && $PAGENAME == '') {echo 'selected';}?>" href="<?php echo ROOT_DIR.'error/404.php'?>">Aller nul part</a>
             </nav>
+        </div>
+        <div class="header_theme">
+            <input class="switch" type="checkbox">
         </div>
     </header>

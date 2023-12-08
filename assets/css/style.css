@@ -132,6 +132,198 @@ header {
 
 }
 
-.test {
-    height: 500px;
+
+.header_theme {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+}
+
+.switch {
+    -webkit-appearance: none;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    background-image: url(https://i.postimg.cc/QtJpZbkp/planete-polluer.jpg );
+    background-size: cover;
+    border-radius:25px;
+    outline: none;
+    transition: background-image .90s;
+    box-shadow: 0px 2px 5px 1px gray;
+  }
+  
+.switch:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-color: navy;
+    border-radius: 100%;
+    border: 1px solid rgba(0,0,0,0.2);
+    transition: all .9s;
+    background-color: #717c81;
+  }
+  
+.switch:checked {
+    background-image: url(https://i.postimg.cc/hv4VDdpN/planete-pas-polluer.jpg);
+    transition: background-image .90s;
+  
+}
+
+.switch:checked:before {
+    transform: translate(100%);
+    transition: all .9s;
+    background-color: #fead35;
+  }
+
+.responsive-wrapper {
+	width: 90%;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.main {
+	margin-top: 3rem;
+}
+
+.widget {
+	width: 95%;
+    height: 95%;
+	max-width: 600px;
+	border-radius: 8px;
+	box-shadow: 0 15px 30px 0 rgba(0,0,0, 0.1);
+	background-color: rgba(256, 256, 256, 0.5);
+    backdrop-filter: blur(10px);
+	padding: 2.5rem;
+	margin: 2rem;
+	font-size: 1.125rem;
+    transition: transform 0.25s ease;
+}
+.widget:hover {
+    transform: translate(-5px, -5px); /* DÃ©placer la div vers la droite et vers le bas */
+}
+
+.clickOnWidget {
+    text-decoration: none;
+    color: black;
+}
+
+.widget > * + * {
+	margin-top: 1.25em;
+}
+
+.widget h2 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+.widget .lienVersArticle {
+    color: green;
+}
+
+.widget code {
+	display: inline-block;
+	padding: 0.125em 0.25em;
+	border-radius: 2px;
+	background-color: #bee5d3;
+}
+
+.widget strong {
+	font-weight: 700;
+}
+
+@media (min-width: 800px) {
+	.header-navigation a {
+		display: inline-block;
+	}
+
+	.header-navigation button {
+		display: none;
+	}
+}
+
+/* ARTICLES */
+
+.sectionArticle {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sectionArticle > .article {
+    width: calc(50% - 20px);
+    box-sizing: border-box; 
+}
+
+/* Media Query */
+@media screen and (max-width: 800px) {
+    .sectionArticle > .article {
+        width: calc(100% - 20px); 
+    }
+}
+
+/* video article */
+
+.random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.machin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.machin > .video {
+    width: 50%;
+    padding: 2rem;
+}
+
+.machin > p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4vw;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    width: 50%;
+}
+
+
+/* media query video article */
+
+@media screen and (max-width: 1000px) {
+    .machin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    .machin > .video {
+        width: 90%;
+        padding: 2rem;
+    }
+    
+    .machin > p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        
+        letter-spacing: 1.5px;
+        text-align: justify;
+        width: 90%;
+    }
 }
