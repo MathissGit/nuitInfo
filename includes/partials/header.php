@@ -19,6 +19,7 @@
                 <a class="<?php if (isset($PAGENAME) && $PAGENAME == 'Accueil') {echo 'selected';}?>" href="">Accueil</a>
                 <a href="">Articles</a>
                 <a href="">Jeu</a>
+                <a class="<?php if (isset($PAGENAME) && $PAGENAME == '') {echo 'selected';}?>" href="<?php echo ROOT_DIR.'error/404.php'?>">Aller nul part</a>
             </nav>
         </div>
     </header>
