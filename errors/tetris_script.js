@@ -282,7 +282,7 @@
                       newX,
                       newY,
                       index,
-                      `images/${basePath}/${index}/${i}.${extensionMap[index]}`,
+                      `../assets/img/${basePath}/${index}/${i}.${extensionMap[index]}`,
                       rotation
                   );
               } else {
