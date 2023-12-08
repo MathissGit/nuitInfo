@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Titre du document</title>
+    <title>erreur 404</title>
     <style>
       .button {
         background-color: #1c87c9;
