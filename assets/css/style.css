@@ -1,3 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap&family=Montserrat&display=swap&family=Bebas+Neue&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b3bf96;
+    background: rgb(65,159,1);
+    background: linear-gradient(30deg, rgba(65,159,1,0.4) 0%, rgba(0,206,240,0.2) 60%, rgba(247,197,35,0.6) 100%);
+}
+
+header {
+    display: flex;
+    height: 100px;
+    max-height: 100px;
+}
+
+.header_logo {
+    display: flex;
+
+    & a {
+        display: flex;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        margin-left: 1.5rem;
+    }
+
+    & img {
+        height: 80%;
+        margin-right: 1.5rem;
+    }
+
+    & h1 {
+        font-family: "Kalam", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+}
+
+
+.header_nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    
+    & nav > a {
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        margin-left: 2rem;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+    }
+
+    & nav > a.selected {
+        border-bottom: 2px solid black;
+    }
+}
+
+.section_play_now {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgb(226, 182, 38) 20%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 100%);
+    height: calc(100svh - 100px);
+    min-height: 600px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    & > * {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+    }
+    
+    
+    & .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        
+        width: 70svw;
+        width: clamp(600px, 70svw, 1000px);
+        
+        min-height: 0;
+        
+        background-color: rgb(100, 100, 100, 0.5);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 50px;
+        
+        & h1 {
+            font-family: "Bebas Neue";
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 60px;
+            margin: 0;
+            padding: 0;
+        }
+
+        & a {
+            background: rgb(34,195,74);
+            background: linear-gradient(130deg, rgba(34,195,74,1) 0%, rgba(132,190,129,1) 49%, rgba(45,253,223,1) 100%);
+            
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 20px;
+            padding: 20px 50px;
+            
+            font-family: "Montserrat", sans-serif;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            letter-spacing: 1.5px;
+            font-size: 20px;
+        }
+
+        & p {
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 1.5px;
+            font-size: 20px;
+        }
+    }
+
+
+
+}
+
+.test {
+    height: 500px;
+}
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
