@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
 *,
 *:after,
@@ -21,6 +22,8 @@ body {
 	line-height: 1.5;
 	min-height: 300vh;
 	position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .responsive-wrapper {
@@ -28,86 +31,6 @@ body {
 	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-/* Sticky header */
-.header-outer {
-	/* Make it stick */
-	height: var(--header-outer-height);
-	position: sticky;
-	top: calc(
-		var(--header-height-difference) * -1
-	); /* Multiply by -1 to get a negative value */
-	display: flex;
-	align-items: center;
-
-	/* Other */
-	background-color: var(--header-bg);
-	box-shadow: 0 2px 10px 0 rgba(0,0,0, 0.1);
-}
-
-.header-inner {
-	/* Make it stick */
-	height: var(--header-inner-height);
-	position: sticky;
-	top: 0;
-
-	/* Other */
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-/* Styling of other elements */
-.header-logo img {
-	display: block;
-	height: calc(var(--header-inner-height));
-}
-
-.header-navigation {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.header-navigation a,
-.header-navigation button {
-	font-size: 1.125rem;
-	color: inherit;
-	margin-left: 1.75rem;
-	position: relative;
-	font-weight: 500;
-}
-
-.header-navigation a {
-	display: none;
-	font-size: 1.125rem;
-	color: inherit;
-	text-decoration: none;
-}
-
-.header-navigation button {
-	border: 0;
-	background-color: transparent;
-	padding: 0;
-}
-
-.header-navigation a:hover:after,
-.header-navigation button:hover:after {
-	transform: scalex(1);
-}
-
-.header-navigation a:after,
-.header-navigation button:after {
-	transition: 0.25s ease;
-	content: "";
-	display: block;
-	width: 100%;
-	height: 2px;
-	background-color: currentcolor;
-	transform: scalex(0);
-	position: absolute;
-	bottom: -2px;
-	left: 0;
 }
 
 .main {
@@ -186,19 +109,12 @@ body {
 }
 
 /* Media Query */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .sectionArticle > .article {
         width: calc(100% - 20px); 
     }
 }
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
-body {
-    margin: 0;
-    padding: 0;
-
-    /* background-color: green; */
-}
 
 header {
     display: flex;
@@ -228,15 +144,12 @@ header {
         font-size: 40px;
         letter-spacing: -1.5px;
     }
-
-    /* background-color: green; */
 }
 
 .header_nav {
     display: flex;
     flex-grow: 1;
     align-items: center;
-    /* background-color: blue;  */
     
     & nav > a {
         font-family: "Montserrat", sans-serif;

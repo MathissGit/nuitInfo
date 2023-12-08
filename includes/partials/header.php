@@ -17,6 +17,7 @@
         <div class="header_nav">
             <nav>
                 <a class="<?php if ($PAGENAME == 'Accueil') {echo "selected";}?>" href="<?php echo ROOT_DIR.'accueil.php';?>">Accueil</a>
+                <a class="<?php if ($PAGENAME == 'Articles') {echo "selected";}?>" href="<?php echo ROOT_DIR.'articles.php';?>">Articles</a>
                 <a class="<?php if ($PAGENAME == 'Jeu') {echo "selected";}?>" href="<?php echo ROOT_DIR.'jeu.php';?>">Testez vos idées reçues</a>
                 <a class="<?php if ($PAGENAME == 'Classement') {echo "selected";}?>" href="<?php echo ROOT_DIR.'classement.php';?>">Classement</a>
             </nav>

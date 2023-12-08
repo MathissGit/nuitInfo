@@ -5,16 +5,7 @@ define('ROOT_DIR', '');
 $PAGENAME = "Articles";
 
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <title><?php if (isset($PAGENAME)) {echo "$PAGENAME";}?></title>
-</head>
-<body>
-
+<?php require_once(ROOT_DIR. 'includes/partials/header.php');?>
     <main>
 
         <h1 class="h1_article" >Mieux comprendre les acteurs du climat</h1>
@@ -41,12 +32,5 @@ $PAGENAME = "Articles";
             </div>
         </section>
     </main>
-    
 
-
-
-
-
-
-</body>
-</html>
+<?php require_once(ROOT_DIR. 'includes/partials/footer.php');?>
