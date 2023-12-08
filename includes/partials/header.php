@@ -16,7 +16,7 @@
         </div>
         <div class="header_nav">
             <nav>
-                <a href="">Accueil</a>
+                <a class="<?php if (isset($PAGENAME) && $PAGENAME == 'Accueil') {echo 'selected';}?>" href="">Accueil</a>
                 <a href="">Articles</a>
                 <a href="">Jeu</a>
             </nav>
