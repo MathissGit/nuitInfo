@@ -165,3 +165,65 @@ header {
         border-bottom: 2px solid black;
     }
 }
+
+
+
+/* video article */
+
+.random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.machin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.machin > .video {
+    width: 50%;
+    padding: 2rem;
+}
+
+.machin > p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4vw;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    width: 50%;
+}
+
+
+/* media query video article */
+
+@media screen and (max-width: 1000px) {
+    .machin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+    .machin > .video {
+        width: 90%;
+        padding: 2rem;
+    }
+    
+    .machin > p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        
+        letter-spacing: 1.5px;
+        text-align: justify;
+        width: 90%;
+    }
+}
