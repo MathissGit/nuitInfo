@@ -177,6 +177,35 @@ header {
     transition: all .9s;
     background-color: #fead35;
   }
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+:root {
+	--header-outer-height: 110px;
+	--header-inner-height: 70px;
+	--header-height-difference: calc(
+		var(--header-outer-height) - var(--header-inner-height)
+	);
+	--header-bg: #fff;
+}
+
+body {
+	font-family: "DM Sans", sans-serif;
+	background-color: #f2f5f7;
+	line-height: 1.5;
+	min-height: 300vh;
+	position: relative;
+    margin: 0;
+    padding: 0;
+    background: rgb(65,159,1);
+    background: linear-gradient(30deg, rgba(65,159,1,0.4) 0%, rgba(0,206,240,0.2) 60%, rgba(247,197,35,0.6) 100%);
+}
 
 .responsive-wrapper {
 	width: 90%;
@@ -204,6 +233,7 @@ header {
 }
 .widget:hover {
     transform: translate(-5px, -5px); /* DÃ©placer la div vers la droite et vers le bas */
+    transform: translate(-5px, -5px); /* Déplacer la div vers la droite et vers le bas */
 }
 
 .clickOnWidget {
@@ -267,6 +297,59 @@ header {
         width: calc(100% - 20px); 
     }
 }
+
+
+header {
+    display: flex;
+    height: 100px;
+    overflow: hidden;
+}
+
+.header_logo {
+    display: flex;
+
+    & a {
+        display: flex;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        margin-left: 1.5rem;
+    }
+
+    & img {
+        height: 80%;
+        margin-right: 1.5rem;
+    }
+
+    & h1 {
+        font-family: "Kalam", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: -1.5px;
+    }
+}
+
+.header_nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    
+    & nav > a {
+        font-family: "Montserrat", sans-serif;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        margin-left: 2rem;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+    }
+
+    & nav > a.selected {
+        border-bottom: 2px solid black;
+    }
+}
+
+
 
 /* video article */
 

@@ -7,7 +7,7 @@
         background-color: #1c87c9;
         border: none;
         color: white;
-        padding: 20px 34px;
+        padding: 0;
         text-align: center;
         text-decoration: none;
         display: inline-block;
