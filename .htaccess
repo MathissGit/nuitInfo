@@ -1,1 +1,3 @@
-ErrorDocument 404 /main
+ErrorDocument 404 /errors/404.php
+DirectoryIndex accueil.php
+
