@@ -1,27 +1,26 @@
 body {
-  overflow: hidden;
-  background: #d7d7d7;
+  background: #000000;
+  margin: 0;
 }
 #tetris {
   width: 720px;
-  height: 880px;
-  border: 1px solid black;
-  padding: 20px;
+  height: 100vh;
+  border: 1px solid rgb(255, 255, 255);
   margin: auto;
 }
 #canvas {
   width: 400px;
-  height: 880px;
+  height: 100vh;
   background-color: #000;
   position: relative;
   color: #fff;
+  border: 1px solid rgb(255, 255, 255);
 }
 #canvas h1 {
   margin: 0;
   padding: 0;
   text-align: center;
   font-size: 30px;
-  padding-top: 200px;
 }
 .piece {
   border: 1px solid white;
@@ -35,7 +34,8 @@ body {
   color: #202020;
   cursor: pointer;
   font-size: 60px;
-  margin-left: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes blink {
@@ -47,7 +47,6 @@ body {
 .red{
   color: #f00000;
   font-size: 20px;
-  padding-top: 150px;
   text-align: center;
 }
 
@@ -91,13 +90,12 @@ p{
   background-color: #000;
   border: 1px solid white;
   width: 220px;
-  height: 220px;
+  height: 19vh;
 }
 #info {
   background-color: #000;
   color: #fff;
   float: right;
   width: 220px;
-  height: 860px;
-  padding: 10px;
+  height: 100vh;
 }
