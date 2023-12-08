@@ -9,7 +9,7 @@ $PAGENAME = "Accueil";
     <div class="box">
         <h1>Testez vos connaissances sur le changement climatique !</h1>
         <p>Faites vous partie des 47% d'utilisateur à croire à au moins deux idées reçues sur le changement climatique ?</p>
-        <a href="">Jouer maintenant</a>
+        <a href="errors/tetris.php">Jouer maintenant</a>
     </div>
 </section>
 
