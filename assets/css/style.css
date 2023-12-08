@@ -24,6 +24,8 @@ body {
 	position: relative;
     margin: 0;
     padding: 0;
+    background: rgb(65,159,1);
+    background: linear-gradient(30deg, rgba(65,159,1,0.4) 0%, rgba(0,206,240,0.2) 60%, rgba(247,197,35,0.6) 100%);
 }
 
 .responsive-wrapper {
@@ -43,7 +45,8 @@ body {
 	max-width: 600px;
 	border-radius: 8px;
 	box-shadow: 0 15px 30px 0 rgba(0,0,0, 0.1);
-	background-color: #fff;
+	background-color: rgba(256, 256, 256, 0.5);
+    backdrop-filter: blur(10px);
 	padding: 2.5rem;
 	margin: 2rem;
 	font-size: 1.125rem;

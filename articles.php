@@ -8,8 +8,6 @@ $PAGENAME = "Articles";
 <?php require_once(ROOT_DIR. 'includes/partials/header.php');?>
     <main>
 
-        
-
         <div class="random">
             <h1 class="h1_article">Le Changement Climatique Expliqué : Mythes, Réalités et Solutions</h1>
             <div class="machin">
